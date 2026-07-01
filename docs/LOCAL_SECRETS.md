@@ -14,10 +14,10 @@ Expected variables when operating on a Cloudflare zone:
 - `CLOUDFLARE_ZONE_ID`
 - `CLOUDFLARE_ZONE_NAME`
 
-If `bmozi.org` uses a separate Cloudflare zone from `bmozi.net`, create a separate local env file such as:
+`bmozi.org` uses a separate Cloudflare zone pointer:
 
 ```bash
-~/.config/bmozi/cloudflare-bmozi-org.env
+source ~/.config/bmozi/cloudflare-bmozi-org.env
 ```
 
 Keep local secret files outside Git and permissioned as `600`.

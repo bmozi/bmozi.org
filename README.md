@@ -46,4 +46,13 @@ The intended production target is Vercel with GitHub integration:
 
 When the domain is managed in Cloudflare and the site is hosted on Vercel, use DNS-only records while Vercel validates the domain.
 
+Vercel currently recommends these records for this project:
+
+| Type | Name | Target | Proxy |
+| --- | --- | --- | --- |
+| CNAME | `@` | `655a5b1a8fddf77c.vercel-dns-017.com` | DNS only |
+| CNAME | `www` | `655a5b1a8fddf77c.vercel-dns-017.com` | DNS only |
+
+Cloudflare may flatten the apex CNAME to Vercel edge A records when queried publicly. Vercel verification still recognizes this as valid.
+
 Local Cloudflare API credentials are documented in `docs/LOCAL_SECRETS.md`.
