@@ -53,6 +53,66 @@ button:focus-visible {
   outline: 2px solid var(--sun);
 }
 
+.community-field {
+  transform: translateZ(0);
+}
+
+.community-thread {
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.community-thread-a {
+  animation: community-drift-a 28s ease-in-out infinite alternate;
+}
+
+.community-thread-b {
+  animation: community-drift-b 34s ease-in-out infinite alternate;
+}
+
+.community-thread-c {
+  animation: community-drift-c 31s ease-in-out infinite alternate;
+}
+
+.community-thread-d {
+  animation: community-drift-d 38s ease-in-out infinite alternate;
+}
+
+.community-thread-e {
+  animation: community-drift-e 42s ease-in-out infinite alternate;
+}
+
+@keyframes community-drift-a {
+  to {
+    transform: translate3d(-34px, 14px, 0);
+  }
+}
+
+@keyframes community-drift-b {
+  to {
+    transform: translate3d(26px, -18px, 0);
+  }
+}
+
+@keyframes community-drift-c {
+  to {
+    transform: translate3d(-18px, -10px, 0);
+  }
+}
+
+@keyframes community-drift-d {
+  to {
+    transform: translate3d(32px, 18px, 0);
+  }
+}
+
+@keyframes community-drift-e {
+  to {
+    transform: translate3d(-24px, -12px, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
