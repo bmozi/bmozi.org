@@ -95,19 +95,29 @@ export function CommunityField() {
       {threads.map((thread, index) => (
         <g key={thread.path} className={thread.className}>
           <path
+            className="community-thread-base"
             d={thread.path}
             fill="none"
             stroke={`rgba(${thread.color}, ${index === 1 ? 0.35 : 0.26})`}
             strokeWidth={index === 1 ? 2 : 1.25}
             vectorEffect="non-scaling-stroke"
           />
+          <path
+            className="community-thread-flow"
+            d={thread.path}
+            fill="none"
+            stroke={`rgba(${thread.color}, ${index === 1 ? 0.82 : 0.66})`}
+            strokeLinecap="round"
+            strokeWidth={index === 1 ? 3 : 2}
+            vectorEffect="non-scaling-stroke"
+          />
           {thread.nodes.map(([cx, cy]) => (
-            <rect
+            <circle
+              className="community-node"
               key={`${cx}-${cy}`}
-              x={cx - 2.5}
-              y={cy - 2.5}
-              width="5"
-              height="5"
+              cx={cx}
+              cy={cy}
+              r="4"
               fill={`rgba(${thread.color}, 0.66)`}
               vectorEffect="non-scaling-stroke"
             />

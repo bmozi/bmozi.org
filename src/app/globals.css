@@ -63,6 +63,20 @@ button:focus-visible {
   will-change: transform;
 }
 
+.community-thread-flow {
+  stroke-dasharray: 18 120;
+  stroke-dashoffset: 0;
+  opacity: 0.82;
+  animation: community-flow 7s linear infinite;
+}
+
+.community-node {
+  opacity: 0.58;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: community-node-pulse 4.6s ease-in-out infinite;
+}
+
 .community-thread-a {
   animation: community-drift-a 28s ease-in-out infinite alternate;
 }
@@ -110,6 +124,25 @@ button:focus-visible {
 @keyframes community-drift-e {
   to {
     transform: translate3d(-24px, -12px, 0);
+  }
+}
+
+@keyframes community-flow {
+  to {
+    stroke-dashoffset: -138;
+  }
+}
+
+@keyframes community-node-pulse {
+  0%,
+  100% {
+    opacity: 0.36;
+    transform: scale(0.78);
+  }
+
+  45% {
+    opacity: 0.95;
+    transform: scale(1.22);
   }
 }
 
