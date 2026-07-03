@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">BMOZI Community mark</title>
+  <desc id="desc">A custom B mark with an open center path for BMOZI Community.</desc>
+  <rect width="256" height="256" fill="#0A0B0F"/>
+  <path
+    fill="#F3F5EA"
+    fill-rule="evenodd"
+    d="M51 34H156L203 60V114L180 137L213 159V212L183 242H51L73 220V56L51 34ZM101 77V118H151L176 104V91L152 77H101ZM101 156V199H156L187 183V172L156 156H101Z"
+  />
+  <path fill="#FFCF5A" d="M75 128H157L143 145H75V128Z"/>
+</svg>

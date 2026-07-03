@@ -17,7 +17,7 @@ export function BrandLockup({
     <span className={`inline-flex items-center gap-3 ${className}`}>
       <span className="shrink-0 overflow-hidden border border-white/15 bg-[var(--ink)] shadow-[5px_5px_0_var(--sun)]">
         <Image
-          src="/brand/bmozi-technical-mark.svg"
+          src="/brand/bmozi-community-mark.svg"
           alt=""
           width={256}
           height={256}
