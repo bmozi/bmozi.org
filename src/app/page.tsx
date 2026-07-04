@@ -64,12 +64,12 @@ const contentPaths = [
   {
     title: "Faith and clarity",
     text: "Scripture, questions, and daily practices written for real life instead of abstract performance.",
-    href: "https://bmozi.com/blog",
+    href: "https://bmozi.com/come-unto-christ",
   },
   {
     title: "Family and recovery",
     text: "Gentle resources for hard subjects: addiction, anxiety, attention, marriage, doubt, and repair.",
-    href: "https://bmozi.com/blog",
+    href: "https://bmozi.com/what-are-you-going-through",
   },
   {
     title: "Tools for practice",
